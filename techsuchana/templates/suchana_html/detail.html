@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+{% extends "suchana_html/base.html"%}
+{% load static %}
+{% block body_block%}
+<div class="container">
+  <div class="row  mt-5" >
+    <div class="col-md-8">
+      <article class="normal">
+        <h2 style=" font-weight:bold; font-family: 'Hind', sans-serif;">{{obj.headlines}}</h2>
+        <div class="sharethis-inline-share-buttons " style="text-align:right";></div>
+        <div class="">
+          <i class="far fa-edit"><span class="mx-1">{{obj.author}}</span></i>
+          <i class="far fa-calendar-alt"> <span class="mx-1">{{obj.displaylink}}</span></i>
+        </div>
+
+        <figure>
+        <img class="img-fluid mt-3" src={{obj.image.url}}  alt="">
+        </figure>
+        <div class="teaser">
+          <div class="auther">
+            <h4>{{obj.auther}}</h4>
+            <p style="text-align:right; font-size:20vw;font-family: 'Hind', sans-serif;">{{obj.news|linebreaks}}</p>
+          </div>
+         </article>
+
+         <div class="mt-5"  >
+           <hr>
+           <h3 class="ml-3" style="text-align:left; font-family: 'Hind', sans-serif; color:#04bab4">Comments:</h3>
+           <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:1px">
+         </div>
+
+         <div class="fb-comments" data-href="http://127.0.0.1:8000/suchana/{{obj.id}}" data-width="" data-numposts="5"></div>
+      </div>
+
+
+    <div class="col-md-4">
+      <div class="ml-3" >
+        <h3>Recents:</h3>
+      </div>
+    <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:2px">
+      {% for item in latest %}
+      <a href="{% url 'suchana:detailnews' item.id %}">
+      <!--  <div class="row"> -->
+          <div class="container bcontent">
+        <div class="card mt-1" style="background: #F1F4F7">
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                    <img class="card-img  mt-3" src={{item.image.url}} alt="Suresh Dasari Card">
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body"  style="background: #F1F4F7">
+                        <h5 style="background: #F1F4F7 ;color:black ;font-family: 'Hind', sans-serif;" class="card-title">{{item.headlines}}</h5>
+                        <p class="card-text">{{item.teasr}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--  </div> -->
+      </a>
+   {% endfor %}
+    </div>
+</div>
+</div>
+{%endblock%}

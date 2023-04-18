@@ -1,0 +1,43 @@
+#hp  {
+float: left;
+ margin: 0 15px 0 0;
+}
+h2 {
+  text-decoration-color: red;
+}
+.card-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.btn-facebook {
+	color: #fff;
+	background-color: #4C67A1;
+}
+.btn-facebook:hover {
+	color: #fff;
+	background-color: #405D9B;
+}
+.btn-facebook:focus {
+	color: #fff;
+}
+a{
+text-decoration:none;
+}
+a:hover
+{
+   text-decoration: none;
+}
+
+.ram{
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+
+    }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

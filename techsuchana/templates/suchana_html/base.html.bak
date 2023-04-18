@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{% static 'images/logo51.png' %}"/>
+    <title>
+      TechSuchana </title>
+    <link rel="stylesheet" href="{% static 'css/suchana.css'%}">
+    <link rel="stylesheet" href="{% static 'js/suchana.js'%}">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta property="og:title" content="Join the best company in the world!" />
+    <meta property="og:url" content="http://www.sharethis.com" />
+    <meta property="og:image" content="http://127.0.0.1/images/logo.jpg" />
+    <meta property="og:description" content="ShareThis is its people. It's imperative that we hire smart,innovative people who can work intelligently as we continue to disrupt the very category we created. Come join us!" />
+    <meta property="og:site_name" content="ShareThis" />
+
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60fcd8b3fd98ad0012a29c49&product=inline-share-buttons" async="async"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/dd9c0885b1.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="font-family: 'Hind', sans-serif;">
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0" nonce="qAOfGAOC"></script>
+    <div class="class="container" style="background:!important"">
+        <div  class="container pt-3">
+        <div  class="row ">
+          <div class="col-md-8 d-flex jusity-content-start align-items-center ">
+            <a href="{% url 'getnews' %}">
+              <img padding="0" margin="0" width="350" height="50"src="{% static 'images/logo81.png'%}" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 align-items-end">
+            <div class="row ml-5">
+            <iframe scrolling="no" border="0" padding="0" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" src="https://www.ashesh.com.np/linknepali-time.php?dwn=only&font_color=333333&font_size=14&bikram_sambat=0&format=dmyw&api=722260l560" width="165" height="22"></iframe>
+             </div>
+          </div>
+        </div>
+        </div>
+     </div>
+<div class="container">
+  <!-- Grid row-->
+  <div class="row d-flex align-items-center">
+
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-7 text-center text-md-right">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/techsuchana" target="_blank" class="fb-ic">
+        <i class="fab fa-facebook-f white-text mr-4"style="color:#3b5998"> </i>
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/TechSuchana" target="_blank" class="tw-ic">
+        <i class="fab fa-twitter white-text mr-4" style="color:#00aced"> </i>
+      </a>
+      <!-- Google +-->
+      <a href="https://www.youtube.com/channel/UCMFT00GoJIXjhCjTMGDgA4Q" target="_blank" class="gplus-ic">
+        <i class="fab fa-youtube white-text mr-4"style="color:#e52d27"> </i>
+      </a>
+      <!--Linkedin -->
+      <a class="li-ic">
+        <i class="fab fa-linkedin-in white-text mr-4" style="color:#0e76a8"> </i>
+      </a>
+      <!--Instagram-->
+      <a class="ins-ic">
+        <i class="fab fa-instagram white-text" style="color:#bc2a8d"> </i>
+      </a>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+</div>
+<div class="container ">
+  <nav id="navbar" padding="0" margin="0" class="navbar navbar-expand-lg  navbar-dark " style="background: #00802b;font-family: 'Hind', sans-serif;">
+   <a  class="navbar-brand"  href="{% url 'getnews' %}">
+    Techsuchana
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     <li > <a class="nav-link  text-white ml-3" href="{% url 'getnews' %}">Home</a> </li>
+    <!-- <li > <a class="nav-link  text-white ml-3" href="{% url 'suchana:technews' %}">TechNews</a> </li> -->
+     <li > <a class="nav-link  text-white ml-3" href="{% url 'suchana:gadgets' %}">Gadgets</a> </li>
+     <li> <a class="nav-link  text-white ml-3"  href="{% url 'suchana:internet' %}">Internet </a> </li>
+     <li> <a class="nav-link  text-white ml-3"  href="{% url 'suchana:automobile' %}">Automobile</a> </li>
+     <!--<li> <a class="nav-link  text-white ml-3"  href="{% url 'suchana:techdeals' %}">TechDeals</a> </li> -->
+     <li> <a class="nav-link  text-white ml-3"  href="{% url 'suchana:techsiksha' %}">TechEducation</a> </li>
+     <li> <a class="nav-link  text-white  ml-3" href="{% url 'suchana:techjobs' %}">Techjobs</a> </li>
+    </ul>
+    <form action="{% url 'suchana:search' %}" class="form-inline my-2 my-lg-0" method="GET">
+      <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
+    </form>
+   </div>
+  </nav>
+</div>
+{% block body_block %}
+  <div class="container" style="font-family: 'Hind', sans-serif;">
+    <div class="row mt-3">
+      <div class="col-md-8 mr-0">
+        <a  class="text-decoration-none" href="{% url 'suchana:detailnews' home.id %}">
+        <div class="card">
+          <div style="text-align:center;font-size:40px">
+            <p class="card-text" >
+             <strong style="color:black" > {{home.headlines|linebreaks}}</strong>
+            </p>
+          </div>
+
+          <img class="card-img-top" src={{home.image.url}} alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"  >
+              <div style="color:black ; text-decoration:none">
+                  {{home.largeteaser|linebreaks}}
+              </div>
+            </p>
+          </div>
+        </div>
+        </a>
+       </div>
+
+      <div class="col-md-4">
+          <div class="ml-3" >
+            <h3>Recents</h3>
+          </div>
+        <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:2px">
+        {% for item in latest %}
+        <a href="{% url 'suchana:detailnews' item.id %}">
+        <!--  <div class="row"> -->
+            <div class="container bcontent">
+          <div class="card mt-1">
+              <div class="row no-gutters">
+                  <div class="col-sm-5">
+                      <img class="card-img  mt-3" src={{item.image.url}} alt="Suresh Dasari Card">
+                  </div>
+                  <div class="col-sm-7">
+                      <div class="card-body">
+                          <h5 style="color:black" class="card-title">{{item.headlines}}</h5>
+                        <!--<p class="card-text">{{item.teaser}}</p> -->
+                        <div class="">
+                          <p></p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!--  </div> -->
+        </a>
+     {% endfor %}
+       </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+     <h2 class="mt-5" style="text-align:center">TechNews</h2>
+    <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:5px">
+  </div>
+  <div class="container">
+    {% for item in technews %}
+      {% if forloop.first %}<div class="row">{% endif %}
+    <div class="col-md-4 mr-0 mt-3">
+      <a href="{% url 'suchana:detailnews' item.id %}">
+      <div class="card">
+        <img class="card-top card-img-top" src={{item.image.url}} alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{item.headlines}}  </p>
+        </div>
+      </div>
+       </a>
+     </div>
+     {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+       {% if forloop.last %}</div>{% endif %}
+
+  {% endfor %}
+  </div>
+
+  <div class="container">
+     <h2 class="mt-5" style="text-align:center">Automobile</h2>
+    <hr size=""   class="bg-primary" style="border:1px solid ;border-radius:5px">
+  </div>
+   <div class="container">
+     {% for item in automobile %}
+
+       {% if forloop.first %}<div class="row">{% endif %}
+     <div class="col-md-4 mr-0 mt-3">
+       <a href="{% url 'suchana:detailnews' item.id %}">
+       <div class="card">
+         <img class="card-top card-img-top" src={{item.image.url}} alt="Card image cap">
+         <div class="card-body">
+           <p class="card-text">{{item.headlines}}  </p>
+         </div>
+       </div>
+        </a>
+      </div>
+      {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+
+  {% endfor %}
+   </div>
+   <div class="container">
+      <h2 class="mt-5" style="text-align:center">TechEducation</h2>
+     <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:5px">
+   </div>
+   <div class="container">
+     {% for item in techsiksha %}
+
+       {% if forloop.first %}<div class="row">{% endif %}
+     <div class="col-md-4 mr-0 mt-3">
+       <a href="{% url 'suchana:detailnews' item.id %}">
+       <div class="card">
+         <img class="card-top card-img-top" src={{item.image.url}} alt="Card image cap">
+         <div class="card-body">
+           <p class="card-text">{{item.headlines}}  </p>
+         </div>
+       </div>
+        </a>
+      </div>
+      {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+
+   {% endfor %}
+   </div>
+   <div class="container">
+      <h2 class="mt-5" style="text-align:center">TechEducation</h2>
+     <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:5px">
+   </div>
+   <div class="container">
+     {% for item in techdeals %}
+
+       {% if forloop.first %}<div class="row">{% endif %}
+     <div class="col-md-4 mr-0 mt-3">
+       <a href="{% url 'suchana:detailnews' item.id %}">
+       <div class="card">
+         <img class="card-top card-img-top" src={{item.image.url}} alt="Card image cap">
+         <div class="card-body">
+           <p class="card-text">{{item.headlines}}  </p>
+         </div>
+       </div>
+        </a>
+      </div>
+      {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+
+   {% endfor %}
+   </div>
+   <div class="container">
+      <h2 class="mt-5" style="text-align:center">CyberCrime</h2>
+     <hr size=""   class="bg-primary" style="border:1px solid  ;border-radius:5px">
+   </div>
+   <div class="container">
+     {% for item in cybercrime %}
+
+       {% if forloop.first %}<div class="row">{% endif %}
+     <div class="col-md-4 mr-0 mt-3">
+       <a href="{% url 'suchana:detailnews' item.id %}">
+       <div class="card">
+         <img class="card-top card-img-top" src={{item.image.url}} alt="Card image cap">
+         <div class="card-body">
+           <p class="card-text">{{item.headlines}}  </p>
+         </div>
+       </div>
+        </a>
+      </div>
+      {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+
+   {% endfor %}
+   </div>
+   {% endblock%}
+   <div class="mt-5" style="background-color:#c0ebcc">
+     <!-- Footer -->
+ <footer class="page-footer font-small blue-grey lighten-5">
+
+   <div style="background-color: #c0ebcc;">
+     <div class="container">
+
+       <!-- Grid row-->
+       <div class="row py-4 d-flex align-items-center">
+
+         <!-- Grid column -->
+         <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+         </div>
+         <!-- Grid column -->
+
+         <!-- Grid column -->
+         <div class="col-md-6 col-lg-7 text-center text-md-right">
+            <h6 class="mb-0 " style="text-align:center">Get Connected With Us: </h6>
+           <!-- Facebook -->
+           <a href="https://www.facebook.com/techsuchana" target="_blank" class="fb-ic">
+             <i class="fab fa-facebook-f white-text mr-4"style="color:#3b5998"> </i>
+           </a>
+           <!-- Twitter -->
+           <a href="https://twitter.com/TechSuchana" target="_blank" class="tw-ic">
+             <i class="fab fa-twitter white-text mr-4" style="color:#00aced"> </i>
+           </a>
+           <!-- Google +-->
+           <a href="https://www.youtube.com/channel/UCMFT00GoJIXjhCjTMGDgA4Q" target="_blank" class="gplus-ic">
+             <i class="fab fa-youtube white-text mr-4"style="color:#e52d27"> </i>
+           </a>
+           <!--Linkedin -->
+           <a class="li-ic">
+             <i class="fab fa-linkedin-in white-text mr-4" style="color:#0e76a8"> </i>
+           </a>
+           <!--Instagram-->
+           <a class="ins-ic">
+             <i class="fab fa-instagram white-text" style="color:#bc2a8d"> </i>
+           </a>
+
+         </div>
+         <!-- Grid column -->
+
+       </div>
+       <!-- Grid row-->
+
+     </div>
+   </div>
+
+   <!-- Footer Links -->
+   <div class="container text-center text-md-left mt-5">
+
+     <!-- Grid row -->
+     <div class="row mt-3 dark-grey-text">
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+         <!-- Content -->
+         <img class="mr-5"width="100" height="100" src="{% static 'images/logo51.png' %}" alt="">
+         <h6 class="text-uppercase font-weight-bold ml-3">techsuchana.com</h6>
+         <hr class="teal accent-3 mb-4 mt-0 d-inline-block ml-3" style="width: 150px;">
+         <!-- <p> managed by: </p> -->
+         <p class="font-weight-bold mb-0"> RedianInfoTech Pvt. Ltd. </p>
+         <p class="mt-0">Imadole,Lalitpur,Nepal</p>
+
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+         <!-- Links -->
+         <h6 class="text-uppercase font-weight-bold">Special Links:</h6>
+         <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+         <p>
+           <a class="dark-grey-text" href="#!">About Us</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="{% url 'suchana:policy' %}">privacy policy</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="#!">सम्पर्क</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="{% url 'suchana:policy' %}">प्रयोगका शर्त </a>
+         </p>
+
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+         <!-- Links -->
+         <h6 class="text-uppercase font-weight-bold">Important Links</h6>
+         <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+         <p>
+           <a class="dark-grey-text" href="{% url 'getnews' %}">Home</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="{% url 'suchana:gadgets' %}">Gadgets</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="{% url 'suchana:techdeals' %}">TechDeals</a>
+         </p>
+         <p>
+           <a class="dark-grey-text" href="{% url 'suchana:techsiksha' %}">TechEducation</a>
+         </p>
+
+       </div>
+       <!-- Grid column -->
+
+       <!-- Grid column -->
+       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+         <!-- Links -->
+         <h6 class="text-uppercase font-weight-bold">Contact Us:</h6>
+         <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+         <p>
+           <i class="fas fa-home mr-3"></i>Imadol,Mahalaxmi-01,Lalitpur</p>
+         <p>
+           <i class="fas fa-envelope mr-3"></i>techsuchananepal@gmail.com</p>
+         <p>
+           <i class="fas fa-phone mr-3"></i> 9840063252</p>
+      <!--   <p><i class="fas fa-print mr-3"></i>9801904739</p> -->
+
+       </div>
+       <!-- Grid column -->
+
+     </div>
+     <!-- Grid row -->
+
+   </div>
+   <!-- Footer Links -->
+
+   <!-- Copyright -->
+   <div class="footer-copyright text-center text-black-50 py-3">© 2021 Copyright:
+     <a class="dark-grey-text" href="{% url 'getnews' %}">techsuchana.com</a>
+   </div>
+   <!-- Copyright -->
+
+ </footer>
+ <!-- Footer -->
+
+   </div>
+  </body>
+</html>
